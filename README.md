@@ -1,6 +1,6 @@
 # udemy
 
-##Intégration de mon projet Raspdev avec l'intégration du framework Laravel
+##Intégration de mon projet Raspdev avec le framework Laravel
 
 L'association RaspDev est une organisation à but non lucratif qui propose des hébergements web gratuits sur des serveurs à base de Raspberry Pi 4 de 8Go avec disque dur SSD de 2To. L'objectif de cette initiative est de permettre aux personnes qui n'ont pas les moyens d'héberger leur site web de le faire sans frais.
 
