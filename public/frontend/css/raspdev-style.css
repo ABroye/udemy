@@ -1,0 +1,317 @@
+/* Paramètres généraux des éléments des pages */
+html {
+  scrollbar-width: none
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.body{
+  min-height: 100vh;
+	display: flex;
+	flex-direction: column
+}
+.header{
+  left: 0;
+  right: 0;
+  margin-top: 58px;
+  z-index: 10;
+}
+
+.main{
+  left: 0;
+  right: 0;
+  padding-top: 0;
+  padding-bottom: 1.5rem;
+}
+
+.sectionThree, .sectionFour{
+  background: #fff;
+}
+
+.carousel{
+  top: -80px;
+}
+
+.footer {
+  left: 0;
+  right: 0
+}
+/* Paramètres du logo */
+.logo{
+  width: 30px;
+  height: auto;
+  margin-right: 0.5rem
+}
+/* Bouton Nombre de membre connectés */
+.btn-outline-light{
+  border: 1px dotted !important;
+  pointer-events: none
+}
+/* Position du voyant actif de l'avatar */
+#status{
+  position: absolute;
+  top: 10% !important;
+  left: 1% !important;
+  transform: translate(-50%, -50%) !important
+}
+/* Couleur des liens actifs dans les menu */
+.dropdown-menu-dark .dropdown-item.active,
+.dropdown-menu-dark .dropdown-item:active {
+    color: #fff;
+    background-color: rgb(190, 8, 64) !important
+}
+/* Taille des drapaux langage du site */
+.flags{
+  height: 20px;
+  width: auto
+}
+/* Portour de l'avatar du membre */
+.profile{
+  border: 1px dotted white
+}
+/* Fond des modales d'administration */
+.transparent-bg-brown{
+  background: rgba(0,0,0,0.70);
+  color: white;
+  text-align: center;
+}
+/* Liens dans les modales d'administration */
+.link-offcanevas{
+  color: white;
+  font-size: small;
+  text-decoration: none
+}
+.link-offcanevas:hover{
+  color: #c8c8c9
+}
+/* Liens des Mentions, politique et CGU */
+.link-privacy{
+  color: rgb(190, 8, 64);
+  text-decoration: none
+}
+.link-privacy:hover{
+  color: #343A3F
+}
+/* Paramètres de Découvrez pourquoi ? avec les deux flèches dans l'accordéon */
+.why{ /* Hey ! Pourquoi pas 😋 */
+  text-align: center;
+  font-weight: bolder
+}
+/* Couleur des flèche de l'accordéon */
+.accordion-button.collapsed::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+}
+
+/* Nom du site dans le footer */
+.footer-brand {
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap
+}
+/* colonne du footer */
+.column{
+  padding-left: 0.8rem
+}
+/* Titres du footer */
+.title-footer{
+  color: white;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(190, 8, 64)
+}
+/* Liens du footer */
+.link-footer{
+  color:white;
+  opacity: 80%;
+  text-decoration: none
+}
+.link-footer:hover{
+  color: #c8c8c9;
+  text-decoration: none
+}
+.link-footer:focus,
+.link-footer:active{
+    color: rgb(190, 8, 64)
+}
+/* Newsletter */
+.checkbox{
+  font-size: smaller
+}
+.container input:checked ~ .checkmark {
+  background-color: rgb(190, 8, 64)
+}
+/* Liens de l'extra-footer*/
+li.list-inline-item:not(:last-child) {
+  margin-right: 0
+}
+
+.link-legal{
+  font-size: smaller;
+  color:white;
+  opacity: 80%;
+  text-decoration: none
+}
+
+.link-legal:hover{
+  color: #c8c8c9
+}
+.link-legal:focus,
+.link-legal:active
+.link-legal, .active{
+    color: rgb(190, 8, 64)
+}
+
+.zoom{      
+  -webkit-transition: all 0.35s ease-in-out;    
+  -moz-transition: all 0.35s ease-in-out;    
+  transition: all 0.35s ease-in-out;     
+  cursor: -webkit-zoom-in;      
+  cursor: -moz-zoom-in;      
+  cursor: zoom-in;  
+}     
+  
+.zoom:hover,  
+.zoom:active,   
+.zoom:focus {
+/**adjust scale to desired size, 
+add browser prefixes**/
+  -ms-transform: scale(1.5);    
+  -moz-transform: scale(1.5);  
+  -webkit-transform: scale(1.5);  
+  -o-transform: scale(1.5);  
+  transform: scale(1.5);    
+  position:relative;      
+  z-index:100;  
+}
+
+.form-control{
+  border: 2px solid rgb(190, 8, 64) !important;
+}
+
+.form-control:focus {
+  border-color: rgba(190, 8, 64, 0.5) !important;
+  box-shadow: 0 0 0 0.10rem rgba(190, 8, 64, 0.8) !important;
+}
+
+.form-check-input {
+  border: 2px solid rgb(190, 8, 64) !important;
+}
+
+.form-check-input:focus {
+  border-color: rgb(190, 8, 64) !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.10rem rgba(190, 8, 64, 0.8) !important;
+}
+.form-check-input:checked {
+  background-color: rgb(190, 8, 64) !important;
+  border-color: rgb(190, 8, 64) !important;
+}
+
+/* Affichage sur extra-small iPhone portrait */
+@media (min-width: 1px) and (max-width: 575.98px) {
+
+  .header{
+    background-color: #343A3F;
+  }
+
+  #header{
+    background-color: #343A3F;
+    margin-top: 58px
+  }
+
+  .carousel{
+    top: 0;
+  }
+
+  .main{
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+  }
+
+}
+
+/* Affichage sur small iPhone paysage */
+@media (min-width: 577px) and (max-width: 767.98px) {
+
+  .header{
+    background-color: #343A3F;
+  }
+
+  #header{
+    background-color: #343A3F;
+    margin-top: 58px
+  }
+
+  .carousel{
+    top: 0;
+  }
+  
+  .main{
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+  }
+
+}
+
+/* Affichage sur small iPad portrait */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  .header{
+    background-color: #343A3F;
+  }
+
+  #header{
+    background-color: #343A3F;
+    margin-top: 58px
+  }
+
+  .carousel{
+    top: 0;
+  }
+  
+  .main{
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+  }
+
+}
+
+/* Affichage sur small iPad paysage */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  #header{
+    background-color: #343A3F;
+    margin-top: 58px
+  }
+
+  .carousel{
+    top: -80px;
+  }
+
+  .sectionOne{
+    margin-bottom: -74px !important;
+  }
+
+  .main{
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  #header{
+    background-color: #343A3F;
+    margin-top: 58px
+  }
+  .sectionOne{
+    margin-bottom: -74px !important;
+  }
+
+}
